@@ -6,12 +6,21 @@ on: [push]
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v1
-    - uses: Azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: "Setup: Install Azure CLI"
+      run: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+    - name: "Setup: Sign in on Azure"
+      run: |
+        az login --service-principal  \
+          --username ${{ secrets.SP_APP_ID }} \
+          --password ${{ secrets.SP_APP_PASSWORD }} \
+          --tenant ${{ secrets.TENANT_ID }}
+
     - uses: Azure/sql-action@v1
       with:
         server-name:  ${{ secrets.AZURE_SERVER_NAME }}

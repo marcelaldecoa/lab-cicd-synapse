@@ -6,13 +6,10 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v1
-
-    - name: "Setup: Install Azure CLI"
-      run: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
     - name: "Setup: Sign in on Azure"
       run: |

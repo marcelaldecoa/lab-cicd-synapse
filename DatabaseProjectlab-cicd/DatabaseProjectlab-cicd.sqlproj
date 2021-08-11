@@ -6,7 +6,7 @@
     <Name>DatabaseProjectlab-cicd</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{66DAF057-641D-478F-B43D-430219567893}</ProjectGuid>
+    <ProjectGuid>{66daf057-641d-478f-b43d-430219567893}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
@@ -103,5 +103,6 @@
     <Build Include="dbo\Functions\ufnGetSalesOrderStatusText.sql" />
     <Build Include="dbo\Functions\ufnGetCustomerInformation.sql" />
     <Build Include="dbo\Functions\ufnGetAllCategories.sql" />
+    <Build Include="SalesLT\Table1.sql" />
   </ItemGroup>
 </Project>

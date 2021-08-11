@@ -1,0 +1,10 @@
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\bin\Debug\my-dw.dacpac
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\bin\Debug\my-dw.dll
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\bin\Debug\my-dw.pdb
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\obj\Debug\my-dw.sqlproj.AssemblyReference.cache
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\obj\Debug\Model.xml
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\obj\Debug\refactor.xml
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\obj\Debug\postdeploy.sql
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\obj\Debug\predeploy.sql
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\obj\Debug\my-dw.dll
+c:\Users\maalde\Dev\lab-cicd-synapse\my-dw\obj\Debug\my-dw.pdb

@@ -12,11 +12,11 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: "Setup: Sign in on Azure"
-      run: |
-        az login --service-principal  \
-          --username ${{ secrets.SP_APP_ID }} \
-          --password ${{ secrets.SP_APP_PASSWORD }} \
-          --tenant ${{ secrets.TENANT_ID }}
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+          az login --service-principal --username ${{ secrets.SP_APP_ID }} --password ${{ secrets.SP_APP_PASSWORD }} --tenant ${{ secrets.TENANT_ID }}
 
     - uses: Azure/sql-action@v1
       with:

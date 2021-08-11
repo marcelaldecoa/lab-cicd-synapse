@@ -11,12 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: "Setup: Sign in on Azure"
-      uses: azure/CLI@v1
+    - uses: azure/login@v1
       with:
-        azcliversion: 2.0.72
-        inlineScript: |
-          az login --service-principal --username ${{ secrets.SP_APP_ID }} --password ${{ secrets.SP_APP_PASSWORD }} --tenant ${{ secrets.TENANT_ID }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - uses: Azure/sql-action@v1
       with:
